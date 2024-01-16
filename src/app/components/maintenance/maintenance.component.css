@@ -1,0 +1,33 @@
+.main {
+    background-color: rgb(60, 60, 60);
+    color: white;
+}
+.h1AndBtn {
+    padding: 40px;
+}
+table {
+    width: 100%;
+}
+th {
+    background-color: black;
+}
+
+td, th{
+    padding: 10px;
+    border-top: 2px solid white;
+}
+
+.col h1 {
+    color: aliceblue;
+}
+.btn {
+    border-radius: 0;
+}
+.td1, .td2, .td3, .td4 {
+    width: 20%;
+}
+
+.spinner-border {
+    vertical-align: middle;
+    margin-left: 10px;
+}

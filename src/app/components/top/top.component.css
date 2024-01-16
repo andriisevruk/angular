@@ -1,0 +1,36 @@
+.top {
+    background-color: rgb(60, 60, 60);
+    color: white;
+    padding: 40px;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    padding: 10px;
+    background-color: gray;
+}
+
+tr {
+    border-top: 2px solid white;
+    color: white;
+}
+.td1 {
+    width: 40%;
+}
+.td2 {
+    width: 30%;
+}
+.td3 {
+    width: 10%;
+    background-color: red;
+    text-align: center;
+    cursor: pointer;
+}
+
+.td4 {
+    text-align: center;
+    width: 20%;
+}

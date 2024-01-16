@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a href="" class="d-inline-flex link-body-emphasis text-decoration-none logo">
+            <img src="assets/car.png" />
+        </a>
+        <div class="userPlace">
+            <span>Hello, {{ userName }} </span> 
+            <button type="button" class="btn btn-primary signOut" routerLink="/">Sign-out</button>
+          </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list"></i>
+        </button>
+        <div class="navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" routerLink="/auth/home" routerLinkActive="link-active">Home</a>
+                <a class="nav-link" routerLink="/auth/maintenance" routerLinkActive="link-active">Maintenance</a>
+                <a class="nav-link" routerLink="/auth/top" routerLinkActive="link-active">Top10</a>
+            </div>
+        </div>
+    </div>
+</nav>

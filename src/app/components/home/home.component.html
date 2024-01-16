@@ -1,0 +1,13 @@
+<div class="home">
+    <h1>Welcome to the Wheels World!</h1>
+</div>
+<table>
+    <tbody>
+        <tr (click)="addToFavorites(car._id)" *ngFor="let car of cars; let i = index">
+            <td class="td0">{{i + 1}}</td>
+            <td class="td1">{{car.name}}</td>
+            <td class="td2">{{car.model}}</td>
+            <td class="td4">$ {{car.price}}</td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,8 @@
+<div class="formPage">
+    <div class="form">
+        <app-login-form *ngIf="showLoginForm" class="loginForm"></app-login-form>
+        <app-register-form *ngIf="!showLoginForm" class="registerForm"></app-register-form>
+        <br>
+        <button type="button" class="btn btn-secondary" (click)="toggleForm()">{{buttonText}}</button>
+    </div>
+</div>

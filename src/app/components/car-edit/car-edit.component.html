@@ -1,0 +1,21 @@
+<div class="edit" *ngIf="car">
+    <div class="mb-3">
+        <label for="carName">Car name</label>
+        <input type="text" id="carName" class="form-control" [(ngModel)]="car.name">
+        <br>
+        <label for="carModel">Car Model</label>
+        <input type="text" id="carModel" class="form-control" [(ngModel)]="car.model">
+        <br>
+        <label for="carPrice">Car price value</label>
+        <input type="text" id="carPrice" class="form-control" [(ngModel)]="car.price">
+    </div>
+    
+    <div class="row" *ngIf="car">
+        <div class="col-4">
+            <a (click)="back()" class="btn btn-primary">Go back</a>
+        </div>
+        <div class="col-8">
+            <a (click)="btnEdit(car.name, car.model, car.price)" class="btn btn-primary">Edit</a>
+        </div>
+    </div>
+</div>

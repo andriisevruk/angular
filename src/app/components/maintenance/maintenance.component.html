@@ -1,0 +1,40 @@
+<div class="main">
+  <div class="row">
+    <div class="col h1AndBtn">
+      <h1>Car maintenance</h1>
+      <button routerLink="/auth/car-add" type="button" class="btn btn-primary">Add new car</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Car name</th>
+            <th scope="col">Car model</th>
+            <th scope="col">Price (USD)</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let car of cars">
+            <td class="td1">{{car.name}}</td>
+            <td class="td2">{{car.model}}</td>
+            <td class="td3">$ {{car.price}}</td>
+            <td class="td4">
+              <button type="button" class="btn btn-primary" (click)="showCarDetails(car._id)">Details</button>
+              <button type="button" class="btn btn-warning" (click)="carEdit(car._id)">Edit</button>
+              <button type="button" class="btn btn-danger" (click)="btnDelete(car._id)">Delete</button>
+              <div class="spinner-border text-danger" role="status"  *ngIf="spin && car._id == deletedId">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+

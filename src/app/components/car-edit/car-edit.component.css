@@ -1,0 +1,11 @@
+.edit {
+    background: linear-gradient(to bottom, black, gray);
+    padding: 20px;
+}
+label {
+    color: white;
+}
+.btn {
+    border-radius: 0;
+    width: 100%;
+}

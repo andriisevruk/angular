@@ -1,0 +1,16 @@
+.formPage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://hips.hearstapps.com/hmg-prod/amv-prod-cad-assets/images/media/671589/2017-10best-cars-the-best-cars-for-sale-in-america-today-feature-car-and-driver-photo-672522-s-original.jpg?fill=16:9&resize=1200:*');
+    background-size: cover;
+    height: 100vh;
+}
+.form {
+    width: 400px;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 20px;
+}
+
